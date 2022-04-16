@@ -1,4 +1,4 @@
-@use "start";
+@use "start";  
 
 .nav {
     position: fixed;
@@ -43,8 +43,9 @@
 
 
 .hero {
-    background-image: url(pexels-mudassir-ali-1904849.jpg) ;
+    background-image: url(pexels-jess-loiterton-4612307.jpg) ;
     height: 100vh;
+    width: 100vw;
     background-repeat: no repeat;
     background-size: cover;
     background-position: bottom center;
@@ -81,3 +82,52 @@
 }
 
 
+.gallery__container h1 { 
+    text-align: center;
+    font-size: 30px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.gallery__image{
+    padding: 0 20px 20px;
+	padding: 5px;
+
+    &:hover{
+        position: relative;
+        top:-50px;
+        left:-35px;
+        width:500px;
+        height:auto;
+        display:block;
+        z-index:999;
+    
+}
+
+
+}
+
+.form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2  {
+        padding: 15px;
+    }
+    
+    h4 {
+        padding: 10px
+    
+    }     
+}
