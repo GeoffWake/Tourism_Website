@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+  font-family: tahoma;
   color: black;
   padding-bottom: 50px;
 }
@@ -68,6 +68,10 @@ body {
   font-size: 20px;
 }
 
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .content__heading {
   font-size: 150%;
   /* check this later*/
@@ -82,6 +86,11 @@ body {
   font-size: 30px;
 }
 
+.gallery__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -91,8 +100,7 @@ body {
 }
 
 .gallery__image {
-  padding: 0 20px 20px;
-  padding: 5px;
+  padding: 10px 20px 20px 10px;
 }
 .gallery__image:hover {
   position: relative;
@@ -102,6 +110,10 @@ body {
   height: auto;
   display: block;
   z-index: 999;
+}
+
+img {
+  border-radius: 10px;
 }
 
 .form {
@@ -114,7 +126,11 @@ body {
   padding: 15px;
 }
 .form h4 {
-  padding: 10px;
+  padding: 15px;
+}
+
+.label {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=tourism.css.map */
