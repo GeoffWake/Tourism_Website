@@ -1,0 +1,83 @@
+@use "start";
+
+.nav {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .3s ease-in-out;
+    
+    &_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        transition: all .3s ease-in-out;
+    }
+    &_list {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        justify-content: center;
+         
+    }
+
+    &_title {
+        color: rgb(112, 154, 233);
+        text-decoration: none;
+        padding: 7px 15px;
+        transition: all .3s ease-in-out;
+    
+
+
+    }
+    &_list_item {
+        color: rgb(201, 35, 137);
+        text-decoration: none;
+        padding: 7px 15px;
+        transition: all .3s ease-in-out;
+    }    
+}
+
+
+
+.hero {
+    background-image: url(pexels-mudassir-ali-1904849.jpg) ;
+    height: 100vh;
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: bottom center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    
+    &__heading{
+        font-size: 46px;
+        
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin: -20px 0 20px;
+    }
+    &__paragraph {
+        font-size: 20px;
+    }
+}
+
+.content{
+
+
+    &__heading{
+        font-size: 150%; /* check this later*/
+        margin: 20px 0;
+    }
+
+    &__paragraph {
+        color: black;
+    }
+
+}
+
+

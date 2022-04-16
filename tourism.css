@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+  color: black;
+  padding-bottom: 50px;
+}
+
+.nav {
+  position: fixed;
+  background-color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.nav_list {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+.nav_title {
+  color: rgb(112, 154, 233);
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+.nav_list_item {
+  color: rgb(201, 35, 137);
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero {
+  background-image: url(pexels-mudassir-ali-1904849.jpg);
+  height: 100vh;
+  background-repeat: no repeat;
+  background-size: cover;
+  background-position: bottom center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.hero__heading {
+  font-size: 46px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: -20px 0 20px;
+}
+.hero__paragraph {
+  font-size: 20px;
+}
+
+.content__heading {
+  font-size: 150%;
+  /* check this later*/
+  margin: 20px 0;
+}
+.content__paragraph {
+  color: black;
+}
+
+/*# sourceMappingURL=tourism.css.map */
