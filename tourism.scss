@@ -2,7 +2,7 @@
 
 .nav {
     position: fixed;
-    background-color: black;
+    background-color: rgb(41, 117, 231);
     top: 0;
     left: 0;
     right: 0;
@@ -12,8 +12,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
+        padding: 15px 0;
         transition: all .3s ease-in-out;
+        
     }
     &_list {
         display: flex;
@@ -23,8 +24,10 @@
          
     }
 
-    &_title {
-        color: rgb(112, 154, 233);
+    
+
+    & a {
+        color: rgb(245, 247, 250);
         text-decoration: none;
         padding: 7px 15px;
         transition: all .3s ease-in-out;
@@ -35,7 +38,7 @@
     &_list_item {
         color: rgb(201, 35, 137);
         text-decoration: none;
-        padding: 7px 15px;
+        padding: 10px 15px;
         transition: all .3s ease-in-out;
     }    
 }
@@ -152,4 +155,33 @@ img {
 .label {
     display: inline-block;
     
+}
+ .map {
+    width: 100%;
+    display:flex;
+    background-color: white;
+    padding: 25px;
+    box-sizing: border-box;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+
+ .map_container{
+    flex:33%;
+    padding: 30px;
+    font-size: 12px;
+    
+
+ }
+
+ img, iframe{
+     max-width: 100%;
+ }
+
+ @media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column ;
+    }
+
 }

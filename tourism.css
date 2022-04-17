@@ -13,7 +13,7 @@ body {
 
 .nav {
   position: fixed;
-  background-color: black;
+  background-color: rgb(41, 117, 231);
   top: 0;
   left: 0;
   right: 0;
@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 15px 0;
   transition: all 0.3s ease-in-out;
 }
 .nav_list {
@@ -32,8 +32,8 @@ body {
   align-items: center;
   justify-content: center;
 }
-.nav_title {
-  color: rgb(112, 154, 233);
+.nav a {
+  color: rgb(245, 247, 250);
   text-decoration: none;
   padding: 7px 15px;
   transition: all 0.3s ease-in-out;
@@ -41,7 +41,7 @@ body {
 .nav_list_item {
   color: rgb(201, 35, 137);
   text-decoration: none;
-  padding: 7px 15px;
+  padding: 10px 15px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -131,6 +131,33 @@ img {
 
 .label {
   display: inline-block;
+}
+
+.map {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  padding: 25px;
+  box-sizing: border-box;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.map_container {
+  flex: 33%;
+  padding: 30px;
+  font-size: 12px;
+}
+
+img, iframe {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=tourism.css.map */
