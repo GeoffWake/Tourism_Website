@@ -1,4 +1,5 @@
-@use "start";  
+@use "start"; 
+@use "hero";
 
 .nav {
     position: fixed;
@@ -46,7 +47,7 @@
 
 
 .hero {
-    background-image: url(pexels-jess-loiterton-4612307.jpg) ;
+    
     height: 100vh;
     width: 100vw;
     background-repeat: no repeat;
@@ -70,8 +71,32 @@
     &__paragraph {
         font-size: 20px;
     }
+
+    
 }
 
+#land {
+    background-image: url(queenstown-1520881_1920.jpg);
+}
+
+#gallery {
+    background-image: url(pexels-mudassir-ali-1904849.jpg);
+}
+
+#map_hero{
+    background-image:url(pexels-tyler-lastovich-1022479.jpg);
+
+}
+
+#signuphero{
+    background-image:url(pexels-s-migaj-747964.jpg);
+
+}
+
+#contacthero {
+    background-image:url(pexels-s-migaj-747964.jpg);
+
+}
 .content{
     
     max-width: 1200px;
