@@ -6,14 +6,14 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+  font-family: tahoma;
   color: black;
   padding-bottom: 50px;
 }
 
 .nav {
   position: fixed;
-  background-color: black;
+  background-color: rgb(41, 117, 231);
   top: 0;
   left: 0;
   right: 0;
@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 15px 0;
   transition: all 0.3s ease-in-out;
 }
 .nav_list {
@@ -32,8 +32,8 @@ body {
   align-items: center;
   justify-content: center;
 }
-.nav_title {
-  color: rgb(112, 154, 233);
+.nav a {
+  color: rgb(245, 247, 250);
   text-decoration: none;
   padding: 7px 15px;
   transition: all 0.3s ease-in-out;
@@ -41,13 +41,13 @@ body {
 .nav_list_item {
   color: rgb(201, 35, 137);
   text-decoration: none;
-  padding: 7px 15px;
+  padding: 10px 15px;
   transition: all 0.3s ease-in-out;
 }
 
 .hero {
-  background-image: url(pexels-mudassir-ali-1904849.jpg);
   height: 100vh;
+  width: 100vw;
   background-repeat: no repeat;
   background-size: cover;
   background-position: bottom center;
@@ -67,6 +67,30 @@ body {
   font-size: 20px;
 }
 
+#land {
+  background-image: url(queenstown-1520881_1920.jpg);
+}
+
+#gallery {
+  background-image: url(pexels-mudassir-ali-1904849.jpg);
+}
+
+#map_hero {
+  background-image: url(pexels-tyler-lastovich-1022479.jpg);
+}
+
+#signuphero {
+  background-image: url(pexels-s-migaj-747964.jpg);
+}
+
+#contacthero {
+  background-image: url(pexels-s-migaj-747964.jpg);
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .content__heading {
   font-size: 150%;
   /* check this later*/
@@ -74,6 +98,85 @@ body {
 }
 .content__paragraph {
   color: black;
+}
+
+.gallery__container h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.gallery__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery__image {
+  padding: 10px 20px 20px 10px;
+}
+.gallery__image:hover {
+  position: relative;
+  top: -50px;
+  left: -35px;
+  width: 500px;
+  height: auto;
+  display: block;
+  z-index: 999;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form h2 {
+  padding: 15px;
+}
+.form h4 {
+  padding: 15px;
+}
+
+.label {
+  display: inline-block;
+}
+
+.map {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  padding: 25px;
+  box-sizing: border-box;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.map_container {
+  flex: 33%;
+  padding: 30px;
+  font-size: 12px;
+}
+
+img, iframe {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=tourism.css.map */
