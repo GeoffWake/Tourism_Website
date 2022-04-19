@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,400&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,400&family=Roboto:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,35 +13,65 @@ body {
   padding-bottom: 50px;
 }
 
+@media screen and (max-width: 900px) {
+  .gallery {
+    flex-direction: column;
+  }
+
+  .nav__container {
+    flex-direction: column;
+  }
+
+  .nav__list {
+    flex-direction: column;
+  }
+
+  .hero {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .gallery {
+    width: 100%;
+  }
+
+  .gallery__image:nth-of-type(5),
+.gallery__image:nth-of-type(6) {
+    display: none;
+  }
+}
 .nav {
   position: fixed;
-  background-color: rgb(41, 117, 231);
+  background-color: #1789FC;
   top: 0;
   left: 0;
   right: 0;
   transition: all 0.3s ease-in-out;
 }
-.nav_container {
+.nav__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
   transition: all 0.3s ease-in-out;
 }
-.nav_list {
+.nav__list {
   display: flex;
   list-style-type: none;
   align-items: center;
   justify-content: center;
 }
 .nav a {
-  color: rgb(245, 247, 250);
+  color: black;
   text-decoration: none;
   padding: 7px 15px;
   transition: all 0.3s ease-in-out;
 }
-.nav_list_item {
-  color: rgb(201, 35, 137);
+.nav a:hover {
+  color: #ebe5e6;
+}
+.nav__list__item {
+  color: black;
   text-decoration: none;
   padding: 10px 15px;
   transition: all 0.3s ease-in-out;
@@ -59,80 +91,80 @@ body {
   margin-bottom: 20px;
 }
 .hero__heading {
-  font-size: 46px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 90px;
+  font-family: roboto;
   margin: -20px 0 20px;
 }
 .hero__paragraph {
-  font-size: 20px;
+  font-size: 30px;
+  font-family: roboto;
 }
 
-#land {
+#landingHero {
   background-image: url(queenstown-1520881_1920.jpg);
 }
 
-#gallery {
-  background-image: url(pexels-mudassir-ali-1904849.jpg);
+#galleryHero {
+  background-image: url(pexels-kyle-roxas-2226900.jpg);
 }
 
-#map_hero {
+#mapHero {
   background-image: url(pexels-tyler-lastovich-1022479.jpg);
 }
 
-#signuphero {
+#signupHero {
   background-image: url(pexels-s-migaj-747964.jpg);
 }
 
-#contacthero {
-  background-image: url(pexels-s-migaj-747964.jpg);
+#contactHero {
+  background-image: url(pexels-ketan-kumawat-724963.jpg);
 }
 
 .content {
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 .content__heading {
-  font-size: 150%;
-  /* check this later*/
+  font-size: 30px;
   margin: 20px 0;
 }
 .content__paragraph {
   color: black;
-}
-
-.gallery__container h1 {
-  text-align: center;
-  font-size: 30px;
-}
-
-.gallery__container {
-  max-width: 1200px;
-  margin: 0 auto;
+  font-size: 18px;
 }
 
 .gallery {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
 }
 
 .gallery__image {
-  padding: 10px 20px 20px 10px;
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  line-height: 0;
 }
-.gallery__image:hover {
-  position: relative;
-  top: -50px;
-  left: -35px;
-  width: 500px;
-  height: auto;
-  display: block;
-  z-index: 999;
+.gallery__image > img {
+  width: 200%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
 }
 
-img {
-  border-radius: 10px;
+.gallery__image:hover {
+  flex: 1 1 50%;
+}
+
+.gallery__image:hover > img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 .form {
@@ -140,6 +172,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .form h2 {
   padding: 15px;
@@ -162,21 +195,72 @@ img {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-.map_container {
+.map img {
+  max-width: 100%;
+}
+.map__heading {
+  font-size: 30px;
+  margin: 20px 0;
+}
+.map__paragraph {
+  color: black;
+  font-size: 18px;
+}
+.map__container {
   flex: 33%;
   padding: 30px;
   font-size: 12px;
+  width: 100%;
 }
 
-img, iframe {
-  max-width: 100%;
+.footer {
+  margin: 0;
+  padding: 0;
+  background-color: #1789FC;
+  position: absolute;
+  width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
+.footer__social__list {
+  display: flex;
+}
+.footer__social__list ul {
+  padding: 10px;
+  width: 300px;
+  height: 30px;
+  margin: auto;
+  display: flex;
+}
+
+.footer__list__item {
+  list-style: none;
+}
+.footer__list__item a {
+  padding: 10px 20px;
+  font-size: 30px;
+  color: white;
+}
+
+.footer__links {
+  width: 560px;
+  height: 70px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.footer__links ul {
+  display: flex;
+  justify-content: space-around;
+  display: flex;
+}
+
+.footer__links__item {
+  list-style: none;
+}
+.footer__links__item a {
+  padding: 0px 15px;
+  font-size: 18px;
+  color: #ebe5e6;
 }
 
 /*# sourceMappingURL=tourism.css.map */

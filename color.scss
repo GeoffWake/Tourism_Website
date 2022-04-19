@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,400&family=Roboto:wght@400;700&display=swap');
+
+$primary-color: #1789FC;
+$secondary-color:#6b9099 ;
+$primary-font-color: black;
+$secondary-font-color:#ebe5e6;
+$social-color: white;
+
+$primary-font: roboto;
+
+
+
+
+
+
+@mixin hero-heading {
+        font-size: 90px;
+        font-family: $primary-font;
+        margin: -20px 0 20px;
+
+}
+
+
+@mixin hero-subheading {
+        font-size:30px;
+        font-family: $primary-font
+}
+
+@mixin content-heading {
+        font-size: 30px; 
+        margin: 20px 0;
+}
+
+@mixin content-paragraph {
+        color: black;
+        font-size: 18px;
+}
+
+@mixin width{
+        max-width: 1200px;
+        margin: 0 auto; 
+}
+
+@mixin center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
